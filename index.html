@@ -3,100 +3,19 @@
     <head>
         <title>Cheatsheet</title>
         <meta charset="UTF-8">
+
+        <link type="text/css" rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <article>
-            <section>
-                <h2>The World Wide Web</h2>
-                <h1>General</h1>
-                <p>
-                    The world wide web was founded by Tim Berners-Lee, and was meant to be a decentralized file system
-                    with links between different databases on independent computers. The most important
-                    technologies to make this work are <a href="#HTML">HTML</a>, <a href="#URL">URL</a> and <a
-                        href="#HTTP">HTTP</a>.
-                </p>
-                <h1 id="HTML">HTML</h1>
-                <p>
-                    
-                    HTML (Hypertext Markup Language) is used to form the base structure and content of a website.
-                </p>
-                <h1 id="URL">URL</h1>
-                <p>
-                    A URL (Uniform Resource Locator) is the address used by web clients to send HTTP requests to
-                    web servers. A URL's syntax typically looks like a URI (Uniform Resource Locator),
-                    which look like this:"[scheme]://[authority]/[path]?[query]#[fragment]".
-                </p>
-                <h1 id="HTTP">HTTP</h1>
-                <p>
-                    (Hypertext Transfer Protocol) is the primary protocol, by web servers and web clients
-                    to transfer hypertext. The secured version of it is called HTTPS.
-                </p>
-                <h1>Web Server</h1>
-                <p>
-                    Web Servers are what make up the entire World Wide Web. They can receive HTTP request and
-                    can then send back either static content in the form of a preexisting file, or dynamic content
-                    which a web client can use to generate something like an HTML file on the fly.
-                </p>
-                <h1>Web Client</h1>
-                <p>
-                    Web clients, also commonly known as browsers, are a way for people to access websites.
-                    When the user inputs a URL, the client sends an HTTP request to the specified server, and
-                    display the received resources.
-                </p>
-            </section>
-            <section>
-                <h2>Important HTML tags</h2>
-                <h1>DOCTYPE</h1>
-                <p>
-                    Is not a real tag, but is mandatory for every HTML file. Contains information about the file type.
-                </p>
-                <h1>html</h1>
-                <p>
-                    The root tag for every HTML file. Is mandatory.
-                </p>
-                <h1>head</h1>
-                <p>
-                    Must include and often contains metadata and links to CSS files. Is always the first tag inside the html tag.
-                </p>
-                <h1>body</h1>
-                <p>
-                    Contains everything that should be displayed on the website. Is always the second tag inside the html tag.
-                </p>
-                <h1>meta</h1>
-                <p>
-                    Placed inside the head tag and is used to add metadata to the website. It doesn't display anything.
-                </p>
-                <h1>link</h1>
-                <p>
-                    Placed inside the head tag and is used to link an external CSS file.
-                </p>
-                <h1>title</h1>
-                <p>
-                    Is a mandatory tag, that is placed inside the head tag. Is displayed as the name of the website.
-                </p>
-                <h1>article</h1>
-                <p>
-                    Can be used to group text as one article. The content should make sense on its own. The
-                    tag itself doesn't change the appearance of it's content on its own.
-                </p>
-                <h1>paragraph</h1>
-                <p>
-                    Is used to group text as one paragraph. Most web browsers automatically insert a single blank line
-                    before and after the tag.
-                </p>
-                <h1>div</h1>
-                <p>
-                    Is used to group text for formatting with CSS. Not visible on its own.
-                </p>
-                <h1>span</h1>
-                <p>
-                    Like div, but is an inline element opposed to a block element.
-                </p>
-                <h1>a</h1>
-                <p>
-                    Used to create hyperlinks, or as a literal anchor to which a hyperlink can lead.
-                </p>
-            </section>
+            <h1 class="main">Cheatsheet</h1>
+            <h2>Index</h2>
+            <p>
+                <a href="world_wide_web.html">The World Wide Web</a>
+            </p>
+            <p>
+                <a href="html_tags.html">Html Tags</a>
+            </p>
         </article>
     </body>
 </html>

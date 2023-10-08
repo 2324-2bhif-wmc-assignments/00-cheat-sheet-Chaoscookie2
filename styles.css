@@ -1,0 +1,19 @@
+h1 {
+    font-size: larger;
+    color: darkblue;
+    background: lightsteelblue;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    font-weight: bolder;
+    color: black;
+}
+
+.notes {
+    color: grey;
+    font-style: italic;
+}
