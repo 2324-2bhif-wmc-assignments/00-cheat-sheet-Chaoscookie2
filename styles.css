@@ -28,6 +28,12 @@ a:hover {
     color: cornflowerblue;
 }
 
+@keyframes buttonAnimation {
+    0% {background-color: grey;}
+    100% {background-color: lightgrey}
+}
+
+
 button {
     color: black;
     border: none;
@@ -35,6 +41,7 @@ button {
     background-color: grey;
     padding: 10px 25px;
     font-weight: bolder;
+    transition: background-color 0.25s;
 }
 
 button:hover {
