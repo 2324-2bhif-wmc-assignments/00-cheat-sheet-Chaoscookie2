@@ -26,11 +26,15 @@
                 A URL (Uniform Resource Locator) is the address used by web clients to send HTTP requests to
                 web servers. A URL's syntax typically looks like a URI (Uniform Resource Locator),
                 which look like this:"[scheme]://[authority]/[path]?[query]#[fragment]".
+                Querys usually look like this: &[query=value]&[second query=value]. The authority contains [userinfo]@[host]:[port].
+                The host is the domain, the userinfo may include content such as passwords and the port is a number.
             </p>
             <h2 id="HTTP">HTTP</h2>
             <p>
                 (Hypertext Transfer Protocol) is the primary protocol, by web servers and web clients
-                to transfer hypertext. The secured version of it is called HTTPS.
+                to transfer hypertext. The secured version of it is called HTTPS. The http request header contains
+                methods (PUT, POST, GET), status codes (like 200 for ok or 404 for not found), Cookies, Accept language and User Agent.
+
             </p>
             <h2>Web Server</h2>
             <p>
