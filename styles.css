@@ -2,7 +2,7 @@
     font-size: 2.5rem;
     color: darkblue;
     background: cornflowerblue;
-    width: 50%;
+    width: 99vw;
     text-align: center;
     border-radius: 0.5rem;
     animation-name: titleAnimation;
@@ -48,4 +48,79 @@ button:hover {
     50% {background-color: lightsteelblue}
     100% {background-color: cornflowerblue}
 }
+.box {
+    border: 0.2rem solid lightgrey;
+    padding: 1rem;
+}
 
+.fake_button {
+    color: black;
+    background-color: lightgrey;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: bolder;
+    transition: background-color 0.25s;
+    text-decoration: none;
+    border-radius: 1rem;
+    border: 0.3rem #3a3a3a;
+}
+
+.fake_button:hover {
+    background-color: darkgray;
+    color: grey;
+}
+
+.fake_button:visited {
+    color: black;
+}
+
+.fake_button:link {
+    color: black;
+}
+
+.fake_button:active {
+    color: #3a3a3a;
+    background-color: #989898;
+}
+
+.menu_bar {
+    float: left;
+    list-style-type: none;
+    padding-left: unset;
+}
+
+.menu_bar>li {
+    text-align: center;
+    display: inline;
+    border: solid blue 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.menu_bar>li>a {
+    margin: unset;
+    transition: background-color 0.25s;
+    text-decoration: none;
+    background-color: #5cb1ff;
+    padding: 1rem 2rem;
+}
+
+.menu_bar>li>a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.menu_bar>li>a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.menu_bar>li>a:link {
+    color:black;
+    text-decoration: none;
+}
+
+.menu_bar>li>a:hover {
+    color: black;
+    background-color: #a2c3ff;
+    text-decoration: none;
+}

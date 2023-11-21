@@ -6,101 +6,103 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <button onclick="window.location.href='./index.html';">Back</button>
+        <p>
+            <a href="index.html" class="fake_button">Back</a>
+        </p>
         <section>
             <h1 class="mainTitle">Important HTML tags</h1>
             <h2>DOCTYPE</h2>
-            <p>
+            <p class="box">
                 Is not a real tag, but is mandatory for every HTML file. Contains information about the file type.
             </p>
             <h2>html</h2>
-            <p>
+            <p class="box">
                 The root tag for every HTML file. Is mandatory.
             </p>
             <h2>head</h2>
-            <p>
-                Must include and often contains metadata and links to CSS files. Is always the first tag inside the html tag.
+            <p class="box">
+                Must be included and often contains metadata and links to CSS files. Is always the first tag inside the html tag.
             </p>
             <h2>body</h2>
-            <p>
+            <p class="box">
                 Contains everything that should be displayed on the website. Is always the second tag inside the html tag.
             </p>
             <h2>meta</h2>
-            <p>
+            <p class="box">
                 Placed inside the head tag and is used to add metadata to the website. It doesn't display anything.
             </p>
             <h2>link</h2>
-            <p>
+            <p class="box">
                 Placed inside the head tag and is used to link an external CSS file.
             </p>
             <h2>title</h2>
-            <p>
+            <p class="box">
                 Is a mandatory tag, that is placed inside the head tag. Is displayed as the name of the website.
             </p>
             <h2>article</h2>
-            <p>
+            <p class="box">
                 Can be used to group text as one article. The content should make sense on its own. The
                 tag itself doesn't change the appearance of it's content on its own.
             </p>
             <h2>paragraph</h2>
-            <p>
+            <p class="box">
                 Is used to group text as one paragraph. Most web browsers automatically insert a single blank line
                 before and after the tag.
             </p>
             <h2>div</h2>
-            <p>
+            <p class="box">
                 Is used to group text for formatting with CSS. Not visible on its own.
             </p>
             <h2>span</h2>
-            <p>
+            <p class="box">
                 Like div, but is an inline element opposed to a block element.
             </p>
             <h2>a</h2>
-            <p>
+            <p class="box">
                 Used to create hyperlinks, or as a literal anchor to which a hyperlink can lead.
                 using the button tag and the onclick attribute, buttons can be used as links aswell
             </p>
             <h2>pre</h2>
-            <p>
+            <p class="box">
                 All formatting applied to the text in this tag can also be seen on the webpage.
             </p>
             <h2>br</h2>
-            <p>
+            <p class="box">
                 Breaks the line / starts a new line.
             </p>
             <h2>hr</h2>
-            <p>
+            <p class="box">
                 Draws a horizontal line, used to separate independent text.
             </p>
             <h2>comments</h2>
-            <p>
+            <p class="box">
                 Using "&lt;!-- --&gt;" the text inside can be commented
                 <span class="notes">To write the characters &lt; and &gt;, &amp;lt; and &amp;gt; have to be used</span>
             </p>
             <h2>img</h2>
-            <p>
+            <p class="box">
                 With the "src"<span class="notes">(containing the actual image)</span> and "alt"<span class="notes">(containing text that replaces the image if it can't be loaded)</span>
                 attribute, images can be displayed
             </p>
             <h2>Lists</h2>
             <h3>Unordered Lists</h3>
-            <p>
+            <p class="box">
                 Start tag: &lt;ul&gt;, list item: &lt;li&gt;.
                 Their content is listed without numbers - only symbols.
             </p>
             <h3>Ordered Lists</h3>
-            <p>
+            <p class="box">
                 Start tag: &lt;ol&gt;, list item: &lt;li&gt;.
                 Their content is listed with numbers.
             </p>
             <h3>Definition Lists</h3>
-            <p>
+            <p class="box">
                 Start tag: &lt;dl&gt;, description: &lt;dt&gt; data: &lt;dd&gt;.
                 Their content is listed with numbers.
             </p>
 
             <h2>table</h2>
-            <p>
+            <p class="box">
                 There is the table head &lt;thead&gt; and &lt;tbody&gt; and &lt;tfood&gt;.
                 The body contains rows are made with &lt;tr&gt;, which contain table cells: &lt;td&gt;. The header
                 contains &lt;th&gt; (header cells) the footer also contains &lt;td&gt; (table cells);
