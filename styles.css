@@ -1,13 +1,15 @@
 .mainTitle {
     font-size: 2.5rem;
     color: darkblue;
-    background: cornflowerblue;
+    background-image: linear-gradient(90deg, cornflowerblue, lightsteelblue);
+    background-size: 200%;
     width: 99vw;
     text-align: center;
+    animation: alternate;
     border-radius: 0.5rem;
-    animation-name: titleAnimation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-name: titleAnimation;
 }
 
 * {
@@ -19,34 +21,9 @@
     font-style: italic;
 }
 
-a:link {
-    color: darkblue;
-}
-
-a:hover {
-    color: cornflowerblue;
-}
-
-
-button {
-    color: black;
-    border: none;
-    border-radius: 5%;
-    background-color: grey;
-    padding: 10px 25px;
-    font-weight: bolder;
-    transition: background-color 0.25s;
-}
-
-button:hover {
-    background-color: lightgrey;
-    color: grey;
-}
-
 @keyframes titleAnimation {
-    0% {background-color: cornflowerblue}
-    50% {background-color: lightsteelblue}
-    100% {background-color: cornflowerblue}
+    0% {background-position: 0 50%}
+    100% {background-position: 100% 50%}
 }
 .box {
     border: 0.2rem solid lightgrey;
@@ -82,26 +59,30 @@ button:hover {
     background-color: #989898;
 }
 
+.active {
+    background-color: #0083ff !important;
+}
+
 .menu_bar {
-    float: left;
     list-style-type: none;
     padding-left: unset;
+    overflow: hidden;
+    background-color: #5cb1ff;
 }
 
-.menu_bar>li {
-    text-align: center;
-    display: inline;
-    border: solid blue 0.2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.menu_bar li {
+    float: left;
+    border-right: 0.1rem solid white;
 }
 
-.menu_bar>li>a {
+.menu_bar li>a {
+    display: block;
     margin: unset;
     transition: background-color 0.25s;
     text-decoration: none;
     background-color: #5cb1ff;
     padding: 1rem 2rem;
+    font-weight: bold;
 }
 
 .menu_bar>li>a:active {
@@ -123,4 +104,28 @@ button:hover {
     color: black;
     background-color: #a2c3ff;
     text-decoration: none;
+}
+
+@keyframes fishDance {
+    0% {
+        translate: 10rem;
+    }
+    25% {
+        translate: 30rem;
+    }
+    50% {
+        translate: 30rem 20rem;
+    }
+    75% {
+        translate: 10rem 20rem;
+    }
+    100% {
+        translate: 10rem;
+    }
+}
+
+.spinningFish {
+    animation-duration: 5s;
+    animation-name:fishDance;
+    animation-iteration-count: infinite;
 }
