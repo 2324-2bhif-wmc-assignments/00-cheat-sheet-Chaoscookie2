@@ -30,35 +30,6 @@
     padding: 1rem;
 }
 
-.fake_button {
-    color: black;
-    background-color: lightgrey;
-    padding: 1rem 2rem 1rem 2rem;
-    font-weight: bolder;
-    transition: background-color 0.25s;
-    text-decoration: none;
-    border-radius: 1rem;
-    border: 0.3rem #3a3a3a;
-}
-
-.fake_button:hover {
-    background-color: darkgray;
-    color: grey;
-}
-
-.fake_button:visited {
-    color: black;
-}
-
-.fake_button:link {
-    color: black;
-}
-
-.fake_button:active {
-    color: #3a3a3a;
-    background-color: #989898;
-}
-
 .active {
     background-color: #0083ff !important;
 }
@@ -66,23 +37,25 @@
 .menu_bar {
     list-style-type: none;
     padding-left: unset;
+    height: 5rem;
     overflow: hidden;
-    background-color: #5cb1ff;
 }
 
-.menu_bar li {
+.menu_bar>li {
     float: left;
-    border-right: 0.1rem solid white;
+    border-right: 0.4rem solid white;
 }
 
 .menu_bar li>a {
     display: block;
     margin: unset;
-    transition: background-color 0.25s;
+    transition: background-color 0.25s, padding 0.25s;
     text-decoration: none;
     background-color: #5cb1ff;
     padding: 1rem 2rem;
     font-weight: bold;
+    border: solid black 0.2rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem grey;
 }
 
 .menu_bar>li>a:active {
@@ -104,6 +77,7 @@
     color: black;
     background-color: #a2c3ff;
     text-decoration: none;
+    padding: 1.5rem 3rem;
 }
 
 @keyframes fishDance {
