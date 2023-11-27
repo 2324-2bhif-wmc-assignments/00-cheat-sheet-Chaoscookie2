@@ -1,19 +1,13 @@
 .mainTitle {
     font-size: 2.5rem;
-    color: darkblue;
-    background-image: linear-gradient(90deg, cornflowerblue, lightsteelblue);
-    background-size: 200%;
+    color: #0083ff;
     width: 99vw;
     text-align: center;
-    animation: alternate;
-    border-radius: 0.5rem;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-name: titleAnimation;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    color: #111111;
 }
 
 .notes {
@@ -21,63 +15,67 @@
     font-style: italic;
 }
 
-@keyframes titleAnimation {
+@keyframes activeAnimation {
     0% {background-position: 0 50%}
     100% {background-position: 100% 50%}
 }
 .box {
-    border: 0.2rem solid lightgrey;
-    padding: 1rem;
+    background-image: linear-gradient(#fafafa, #ffffff);
+    border: #dddddd solid 1px;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .active {
-    background-color: #0083ff !important;
+    border-color: #0083ff !important;
 }
 
 .menu_bar {
     list-style-type: none;
     padding-left: unset;
     height: 5rem;
-    overflow: hidden;
+    display: flex;
 }
 
 .menu_bar>li {
     float: left;
-    border-right: 0.4rem solid white;
+    border-right: 0.2rem solid white;
+    flex-grow: 1;
+    text-align: center;
 }
 
-.menu_bar li>a {
+.menu_bar>li>a {
     display: block;
     margin: unset;
-    transition: background-color 0.25s, padding 0.25s;
+    transition: padding 0.25s;
     text-decoration: none;
-    background-color: #5cb1ff;
+    border-radius: 1rem;
     padding: 1rem 2rem;
     font-weight: bold;
-    border: solid black 0.2rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem grey;
+    border: lightgray 0.1rem solid;
+    background-image: linear-gradient(#eeeeee, #ffffff);
+    background-size: 200%;
 }
 
 .menu_bar>li>a:active {
-    color: black;
     text-decoration: none;
+    border-color: #0083ff;
 }
 
 .menu_bar>li>a:visited {
-    color: black;
     text-decoration: none;
 }
 
 .menu_bar>li>a:link {
-    color:black;
     text-decoration: none;
 }
 
 .menu_bar>li>a:hover {
-    color: black;
-    background-color: #a2c3ff;
     text-decoration: none;
-    padding: 1.5rem 3rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem grey;
+    position: relative;
 }
 
 @keyframes fishDance {
@@ -99,7 +97,5 @@
 }
 
 .spinningFish {
-    animation-duration: 5s;
-    animation-name:fishDance;
-    animation-iteration-count: infinite;
+    animation: fishDance 5s infinite linear;
 }
