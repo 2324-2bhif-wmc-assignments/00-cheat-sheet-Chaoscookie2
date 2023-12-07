@@ -80,22 +80,16 @@
 
 @keyframes fishDance {
     0% {
-        translate: 10rem;
-    }
-    25% {
-        translate: 30rem;
+        translate: 100% 0;
     }
     50% {
-        translate: 30rem 20rem;
-    }
-    75% {
-        translate: 10rem 20rem;
+        translate: 50% 50%;
     }
     100% {
-        translate: 10rem;
+        translate: 0 0;
     }
 }
 
 .spinningFish {
-    animation: fishDance 5s infinite linear;
+    animation: fishDance 3s infinite ease-in-out alternate;
 }
