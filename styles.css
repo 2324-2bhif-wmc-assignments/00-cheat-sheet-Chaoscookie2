@@ -36,6 +36,7 @@
     padding-left: unset;
     height: 5rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu_bar>li {
@@ -78,7 +79,7 @@
     position: relative;
 }
 
-@keyframes fishDance {
+@keyframes screenSaver {
     0% {
         translate: 100% 0;
     }
@@ -90,6 +91,15 @@
     }
 }
 
-.spinningFish {
-    animation: fishDance 3s infinite ease-in-out alternate;
+.screenSave {
+    animation: screenSaver 3s infinite linear alternate;
+    top: 50%;
+    left: 50%;
+    width: 15rem;
+    height: auto;
+}
+
+.cleanList {
+    list-style-type: none;
+    margin-left: -2rem;
 }
