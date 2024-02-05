@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<ul class="menu_bar">
+    <li><a href="index.html">Index</a></li>
+    <li><a href="world_wide_web.html">The World Wide Web</a></li>
+    <li><a href="html_tags.html">HTML Tags</a></li>
+    <li><a href="CSS.html">CSS</a></li>
+    <li><a class="active" href="bootstrap.html">Bootstrap</a></li>
+</ul>
+<div class="container">
+    <h1 class="page-header">Bootstrap</h1>
+    To include bootstrap use :
+    <pre>
+&lt;href="INSERT LINK HERE" rel="stylesheet" crossorigin="anonymous">
+&lt;script src="INSERT LINK HERE"  crossorigin="anonymous">&lt;/script>
+            </pre>
+    <section>
+        <h2 class="page-header">Containers</h2>
+        <div>
+            Using the class "container" you can let text not stick to the left side. The distance is also responsive. They are the basic
+            way to access the grid system.
+        </div>
+    </section>
+    <section class="page-header">
+        <h3 class="page-header">Headings</h3>
+        <div>
+            Headers (h1, h2 usw...) can be made better with the page-header class
+        </div>
+    </section>
+    <section class="page-header">
+        <h3 class="page-header">Highlight Text</h3>
+        the "lead" class can make paragraphs more prominent, like this:
+        <p class="lead">
+            This text is very important
+        </p>
+        Some tags to highlight text are: mark, del and u
+        <div>
+            <mark>this text is marked</mark> <del>this text is in a del tag</del> <u>this text is in a u tag</u>
+        </div>
+    </section>
+    <section class="page-header">
+        <h3 class="pag-header">Alignment & Transformation</h3>
+        <p>
+            The text-start, text-center, text-end classes can be used to align text respectively
+        </p>
+        <p class="text-center text-capitalize">this text is Centered</p>
+        <div>
+            There are also ways to change the case with classes
+        </div>
+        <ul>
+            <li>text-lowercase: <span class="text-lowercase">Lower Case Text</span></li>
+            <li>text-capitalize: <span class="text-capitalize">capitalized text</span></li>
+            <li>text-uppercase: <span class="text-uppercase">Upper Case Text</span></li>
+        </ul>
+    </section>
+    <section class="page-header">Floating</section>
+    <section class="page-header">
+        <h3>Floating</h3>
+        The following classes can be used to float text
+        <ul>
+            <li>float-end: floats right</li>
+            <li>float-start: floats left</li>
+            <li>float-none: makes all elements after not be next to the floated elements</li>
+        </ul>
+        <div class="float-end">This text is floated to the right</div>
+        <div>this text is after the floated text</div>
+    </section>
+    <section class="page-header">
+        <h3>blockquotes</h3>
+        <div>
+            With the blockquote tag, people can be cited.
+            A blockquote tag also needs a "footer" tag, containing the "cite" tag.
+        </div>
+        <div>
+            The "blockquote" class can be used to make it prettier:
+        </div>
+
+        <blockquote class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+        </blockquote>
+
+    </section>
+    <section class="page-header">
+        <h3>Lists</h3>
+        You can use the "list-unstyled" class to remove all paddings and list style type from a list
+        Also you can make the list in-line with the "list-inline" class. For this the li tags need to have the class "list-inline-item"
+
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item grey-background-gradient">Item One</li>
+            <li class="list-inline-item grey-background-gradient">Item Two</li>
+            <li class="list-inline-item grey-background-gradient">Item Three</li>
+            <li class="list-inline-item grey-background-gradient">Item Four</li>
+        </ul>
+    </section>
+    <section class="page-header">
+        <h3>Contextual Colors</h3>
+        Some classes can be used to give text colors, based on what the text means
+        <ul>
+            <li >"text-primary" gives the content a blue color</li>
+            <li>"text-success" gives the content a green color.</li>
+            <li>"text-info gives" the content another green color.</li>
+            <li>"text-warning" gives the content a brown color.</li>
+            <li>"text-danger" gives the content a red color.</li>
+            <li>"text-muted" gives the content a gray color.
+        </ul>
+        The same is true for background colors, but "text" has to be replaced by "bg"
+    </section>
+</div>
+<div class="container">
+    <h2>Buttons</h2>
+    <section>
+        <h3  class="page-header">Basic Buttons</h3>
+        To create a button the "btn btn-default" tag can be used to turn an anchor tag into a button. You should also add role="button" attribute
+
+        <div><a href="#" class="btn btn-primary">TOP</a></div>
+        <div>If you want to make an input for a form, the "input" tag can  be used with attributes type="submit" and value="Submit"</div>
+        <input type="submit" name="TEST" value="Submit">
+    </section>
+    <section>
+        <h3>Contextual buttons</h3>
+        As with colors there are buttons with a context
+        <div>
+            there are btn-default (as mentioned above), btn-primary, btn-success, btn-info, btn-warning, btn-danger, btn-link
+        </div>
+    </section>
+    <section>
+        <h3>Button Sizes</h3>
+        You can also add different button sizes to the class name: btn-lg, btn-sm, btn-xs
+    </section>
+    <section>
+        <h2>Tables</h2>
+        There are classes to style tables: table (this class always has to be used like this: "table table-striped"), table-striped, table-bordered, table-hover
+    </section>
+    <section>
+        <h2>List Groups</h2>
+        If you add the class "list-group" to a list (can also be div)and add "list-group-item" to the list items, you can make them appear
+        disabled, if you add " disabled" to the class name and active, if you add " active".
+    </section>
+    <section>
+        <h3>Links and Buttons</h3>
+        If you want to make an actionable list group, you can put anchor tags in a div with the list-group class and the anchor tags being list-group-items
+        You should also add the "list-group-action" class to them. You can also use the button tag with type="button". Here you can use the disabled attribute instead of the class.
+        You can also use contextual classes like "list-group-item-primary" (primary can also be secondary, success, danger, warning, info, light, dark)
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">A</a>
+            <a href="#" class="list-group-item list-group-item-action">B</a>
+            <a href="#" class="list-group-item list-group-item-action">C</a>
+        </div>
+    </section>
+    <section>
+        <h2>Cards</h2>
+        Cards are a sort of flexible container (made with flex). They can be created by applying the class "card" to a div.
+        They consist of are made of:
+        <ul class="list-group">
+            <li class="list-group-item">card-img-top: class that can be applied to an image that will appear at the top of the card</li>
+            <li class="list-group-item">card-body: applied to a div and contains everything in the body</li>
+            <li class="list-group-item">card-title: applied to a title tag (h1, h2 usw) and </li>
+            <li class="list-group-item">card-text: applied to a paragraph or div or whatever and contains the text of the card </li>
+        </ul>
+
+        A card can also have a button (btn class)
+
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">HELLO</h6>
+                <div class="card-text">
+                    Hello this is text
+                </div>
+            </div>
+        </div>
+
+        obviously it's width, height and color can be adjusted
+    </section>
+
+    <section>
+        <h2>Grids - Page Layout</h2>
+        The grid functions similarly to a table: with rows and columns. They need to be in a container.
+        The grid can have up to 12 columns. The rows are divs with the "row" class. Each column div must have the "col-*-*" class.
+        <div>
+            There are 4 possible things that can be at the first position (replacing the first star)
+
+            <ol>
+                <li>nothing (for phones)</li>
+                <li>sm (for tablets)</li>
+                <li>md (for desktop)</li>
+                <li>lg (for big desktop)</li>
+                <li>xl (for very big desktop ig)</li>
+            </ol>
+
+            the second * is replaced by the amount of columns should be used up from the grid
+        </div>
+
+        You can specify what size is used for what device, for example: "col-xs-3 col-md-2". In total the columns should add up to 12. If for example no lg is specified
+        , the next smaller specification will be used (and so on). Not in reverse though.
+
+        <div class="container black-small-border">
+            <div class="row">
+                <div class="col-4">TEST</div>
+                <div class="col-4">TEST</div>
+                <div class="col-4">TEST</div>
+            </div>
+            <div class="row">
+                <div class="col-2">TEST</div>
+                <div class="col-4">TEST</div>
+                <div class="col-6">TEST</div>
+            </div>
+        </div>
+
+        There are no Grid cells, the text is written directly in the cols
+    </section>
+
+    <section>
+        <h2>Images and Figures</h2>
+        You can add the "image-responsive" class to make the image adjust it's siz. With the "img-rounded" class you can make its corners round. The
+        "img-circle" you can make an image be a circle
+    </section>
+</div>
+
+<div class="container">
+    <section>
+        <h2>Carousels</h2>
+        To make a carousel, you need an outside div, with class="carousel" and data-ride="carousel". Inside that you need a div
+        with class="carousel-inner". There you can add divs with class="carousel-item". They can contain images or even text.
+    </section>
+
+    <section>
+        <h2>Alerts</h2>
+        Alerts are sort of pop up notifications. They are created with a div with class="alert" and role"alert". They can also be styled further with contextual classes (fore example "alert alert-action").
+        They can contain anchor tags. On top of that they can have a close/dismiss button, with class="close" and data-dismiss="alert". If you want that, you need to add the classes: alert-dismissible, fade and show
+    </section>
+    <section>
+        <h2>Badges</h2>
+        Badges are a small labeling component, that can be put inside inline elements. They are created using class="badge" on a span.
+        The class can also be put on an anchor tag. As always contextual coloring can be used! ("badge badge-*")
+    </section>
+
+    <section>
+        <h2>Dropdowns</h2>
+        They are contextual overlays for displaying lists of links and more. They require an encasing div with class="dropdown".
+        They need a button or a (class="btn") with class="dropdown-toggle". It also needs to have data-toggle="dropdown".
+        For the menu itself another div with class="dropdown-menu" is used. It can contain the anchor tags with class="dropdown-item"
+    </section>
+    <section>
+        <h2>Pagination</h2>
+        Need a nav tag outside with an ul with class="pagination". The li have class="page-item" and can contain anchors with class="page-link" The pagination size can be changed with
+        pagination-lg and pagination-sm added as classes for the ul.
+    </section>
+    <section>
+        <h2>Forms</h2>
+        Forms need the form tag. Inside you need a div with class="form-group". Inside needs labels and inputs (type="password" or "email" or "checkbox"). Classes can be form-check-input, form-label,  form-control
+    </section>
+    <section>
+        <h2>Positioning</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                static: normal text flow
+            </li>
+            <li class="list-group-item">
+                relative: like static, but you can add an offset with top, right, bottom, left. This does <b>NOT</b> change the text flow for the surrounding elements
+            </li>
+            <li class="list-group-item">
+                absolute: Positioned relative to it's closest positioned ancestor (with position static)
+            </li>
+            <li class="list-group-item">
+                fixed: Has a fixed position in on the page, remains there when scrolling. Position can be changed with top, right, bottom and left properties
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>CSS Combinators</h2>
+        <ul class="list-group">
+            <li class="list-group-item">" ": descendant combinator - selects all descendants of the first element</li>
+            <li class="list-group-item">">": descendant combinator - selects all direct children of the first element</li>
+            <li class="list-group-item">"+": next-sibling combinator - selects all siblings, that are <b>directly</b> preceeded by the first element</li>
+            <li class="list-group-item">"~": next-sibling combinator - selects all siblings, that are preceeded by the first element (not just directly)</li>
+            <li class="list-group-item">nth-child(): Selects the element that is the nth child of the first one</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Flex</h2>
+        Flex first needs a flex box (for example div with display:flex).
+        <h5>properties for container</h5>
+        <ul class="list-group">
+            <li class="list-group-item">flex-direction: can be column, row and both can be reversed</li>
+            <li class="list-group-item">flex-wrap: determines how the items wrap if not enough space</li>
+            <li class="list-group-item">flex-flow: combines the two above</li>
+            <li class="list-group-item">justify-content: changes how the elements are distributed along the main axis (for rows that is horizontal)</li>
+            <li class="list-group-item">align-items: changes how the elements are placed in line along the secondary axis</li>
+            <li class="list-group-item">align-content: changes how the elements are distributed along the secondary axis</li>
+            <li class="list-group-item">gap: changes exactly how much space is between the elements</li>
+        </ul>
+
+        <h5>Properties for children</h5>
+        <ul class="list-group">
+            <li class="list-group-item">order: normally each element is numbered like they are put in html. This number can be changed to change the order</li>
+            <li class="list-group-item">flex-grow: Normally each element has the same amount of space. This number changes how many elements worth of space the element gets</li>
+            <li class="list-group-item">align-self: used to override the align-items property for a single element</li>
+        </ul>
+    </section>
+</div>
+<div class="top-button">
+    <a href="#" class="box">TOP</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<script src="./../../Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</html>
