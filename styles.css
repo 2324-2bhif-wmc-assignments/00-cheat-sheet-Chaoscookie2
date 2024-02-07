@@ -259,3 +259,43 @@ body {
 #test-alert {
     width: fit-content;
 }
+
+#nothing-here {
+    text-decoration: none;
+    color: #173c72;
+}
+
+.very-good-animation-fr-fr {
+    position: fixed;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    border-radius: 100%;
+    animation-name: best-animation-ever;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes best-animation-ever {
+    0% {
+        translate: 100% 10vh;
+    }
+    45% {
+        translate: 100% 80vh;
+        height: 10rem;
+    }
+    50% {
+        translate: 100% 90vh;
+        height: 5rem;
+    }
+    55% {
+        height: 10rem;
+        translate: 100% 80vh;
+    }
+
+    100% {
+        translate: 100% 10vh;
+    }
+}
