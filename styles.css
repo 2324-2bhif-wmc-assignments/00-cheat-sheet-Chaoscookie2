@@ -51,6 +51,7 @@ body {
     margin-right: 0.2rem;
     flex-grow: 1;
     text-align: center;
+    flex-basis: 0;
 }
 
 .menu_bar>li>a {
@@ -90,10 +91,10 @@ body {
 
 @keyframes screenSaver {
     0% {
-        translate: 100% 0;
+        translate: 900% 0;
     }
     50% {
-        translate: 50% 50%;
+        translate: 450% 400%;
     }
     100% {
         translate: 0 0;
@@ -101,10 +102,8 @@ body {
 }
 
 .screenSave {
-    animation: screenSaver 3s infinite linear alternate;
-    top: 50%;
-    left: 50%;
-    width: 15rem;
+    animation: screenSaver 6s infinite linear alternate;
+    width: 10%;
     height: auto;
 }
 
