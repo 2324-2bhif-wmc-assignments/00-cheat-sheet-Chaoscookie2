@@ -7,13 +7,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<ul class="menu_bar">
-    <li><a href="index.html">Index</a></li>
-    <li><a href="world_wide_web.html">The World Wide Web</a></li>
-    <li><a href="html_tags.html">HTML Tags</a></li>
-    <li><a href="CSS.html">CSS</a></li>
-    <li><a class="active" href="bootstrap.html">Bootstrap</a></li>
-</ul>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Cheatsheet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./world_wide_web.html">World Wide Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_tags.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./CSS.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Bootstrap</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="container">
     <h1 class="page-header">Bootstrap</h1>
     To include bootstrap use :
@@ -28,13 +47,7 @@
             way to access the grid system.
         </div>
     </section>
-    <section class="page-header">
-        <h3 class="page-header">Headings</h3>
-        <div>
-            Headers (h1, h2 usw...) can be made better with the page-header class
-        </div>
-    </section>
-    <section class="page-header">
+    <section>
         <h3 class="page-header">Highlight Text</h3>
         the "lead" class can make paragraphs more prominent, like this:
         <p class="lead">
@@ -229,12 +242,38 @@
         <h2>Carousels</h2>
         To make a carousel, you need an outside div, with class="carousel" and data-ride="carousel". Inside that you need a div
         with class="carousel-inner". There you can add divs with class="carousel-item". They can contain images or even text.
+        <div id="test-carousel" class="carousel slide ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/test_image.png" class="d-block w-100" alt="test image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/test_image2.png" class="d-block w-100" alt="test image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/test_image.png" class="d-block w-100" alt="test image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#test-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#test-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <section>
         <h2>Alerts</h2>
         Alerts are sort of pop up notifications. They are created with a div with class="alert" and role"alert". They can also be styled further with contextual classes (fore example "alert alert-action").
         They can contain anchor tags. On top of that they can have a close/dismiss button, with class="close" and data-dismiss="alert". If you want that, you need to add the classes: alert-dismissible, fade and show
+
+        <div class="alert alert-primary alert-dismissible fade show fixed-bottom" role="alert" id="test-alert">
+            This text serves no purpose whatsoever!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
     </section>
     <section>
         <h2>Badges</h2>
@@ -275,41 +314,9 @@
         </ul>
     </section>
     <section>
-        <h2>CSS Combinators</h2>
-        <ul class="list-group">
-            <li class="list-group-item">" ": descendant combinator - selects all descendants of the first element</li>
-            <li class="list-group-item">">": descendant combinator - selects all direct children of the first element</li>
-            <li class="list-group-item">"+": next-sibling combinator - selects all siblings, that are <b>directly</b> preceeded by the first element</li>
-            <li class="list-group-item">"~": next-sibling combinator - selects all siblings, that are preceeded by the first element (not just directly)</li>
-            <li class="list-group-item">nth-child(): Selects the element that is the nth child of the first one</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Flex</h2>
-        Flex first needs a flex box (for example div with display:flex).
-        <h5>properties for container</h5>
-        <ul class="list-group">
-            <li class="list-group-item">flex-direction: can be column, row and both can be reversed</li>
-            <li class="list-group-item">flex-wrap: determines how the items wrap if not enough space</li>
-            <li class="list-group-item">flex-flow: combines the two above</li>
-            <li class="list-group-item">justify-content: changes how the elements are distributed along the main axis (for rows that is horizontal)</li>
-            <li class="list-group-item">align-items: changes how the elements are placed in line along the secondary axis</li>
-            <li class="list-group-item">align-content: changes how the elements are distributed along the secondary axis</li>
-            <li class="list-group-item">gap: changes exactly how much space is between the elements</li>
-        </ul>
 
-        <h5>Properties for children</h5>
-        <ul class="list-group">
-            <li class="list-group-item">order: normally each element is numbered like they are put in html. This number can be changed to change the order</li>
-            <li class="list-group-item">flex-grow: Normally each element has the same amount of space. This number changes how many elements worth of space the element gets</li>
-            <li class="list-group-item">align-self: used to override the align-items property for a single element</li>
-        </ul>
     </section>
-</div>
-<div class="top-button">
-    <a href="#" class="box">TOP</a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-<script src="./../../Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </html>

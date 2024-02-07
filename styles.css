@@ -1,12 +1,14 @@
 body {
     margin: 0;
+    background-color: #b2d8ff;
 }
 
 .mainTitle {
     font-size: 2.5rem;
     color: #0083ff;
-    width: 99vw;
-    text-align: center;
+    width: 100%;
+    text-align: left;
+    margin-left: 1rem;
 }
 
 * {
@@ -82,7 +84,7 @@ body {
 .menu_bar>li>a:hover {
     text-decoration: none;
     padding-bottom: 1.5rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem grey;
+    box-shadow: rgba(0, 0, 0, 20%) -1rem 1rem 1rem;
     position: relative;
 }
 
@@ -107,7 +109,7 @@ body {
 }
 
 .cleanList {
-    list-style-type: none;
+    list-style: circle;
     margin-left: -2rem;
 }
 
@@ -124,7 +126,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    bottom: -8%;
+    bottom: -5%;
     transition: bottom 0.5s ease-out;
 }
 
@@ -136,4 +138,125 @@ body {
 
 .top-button:hover {
     bottom:-3%;
+}
+
+.main-body {
+    background-color: white;
+    margin: 1rem 2rem 2rem 20%;
+    box-shadow: rgba(0, 0, 0, 20%) -1rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar {
+    border: lightgray 0.1rem solid;
+    left: 2.5%;
+    position: fixed;
+    top: 15%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+
+.sidebar > a{
+    box-shadow: rgba(0, 0, 0, 20%) -1rem 1rem 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #fafafa, #ffffff);
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidebar > a:hover{
+    background-image: linear-gradient(90deg, #fafafa, #ffffff,  #0083ff);
+    background-size: 200%;
+    animation-name: sidebar-hover;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    background-position: 100%;
+}
+
+.sidebar a:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.sidebar a:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+@keyframes sidebar-hover {
+    0%{
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 100%
+    }
+}
+
+#box-model-image {
+    width: 30%;
+}
+
+.test-table {
+    border-collapse: collapse;
+    border: solid 0.1rem black;
+}
+
+.test-table td, th {
+    border: solid 0.1rem black
+}
+
+.circle-flex {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+#linear-gradient-circle {
+    background-image: linear-gradient(90deg, red, blue);
+}
+
+#radial-gradient-circle {
+    background-image: radial-gradient(closest-side, red, blue);
+}
+
+#conic-gradient-circle {
+    background-image: conic-gradient(red, blue, red);
+}
+
+.roman-ol {
+    list-style-type: upper-roman;
+}
+
+.main-main-title {
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: white underline;
+}
+
+.page-header {
+    margin-top: 4rem;
+}
+
+#test-carousel {
+    scale: 50%;
+}
+
+#test-alert {
+    width: fit-content;
 }

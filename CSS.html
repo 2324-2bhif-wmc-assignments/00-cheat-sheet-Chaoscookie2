@@ -6,6 +6,26 @@
         <link type =text/css rel="stylesheet" href="styles.css">
     </head>
     <body>
+
+        <div class="sidebar">
+                <a href="#css-rule">CSS-Rule</a>
+                <a href="#comments">Comments</a>
+                <a href="#colors">Colors</a>
+                <a href="#background">Background</a>
+                <a href="#text">Text</a>
+                <a href="#fonts">Fonts</a>
+                <a href="#links">Links</a>
+                <a href="#combinators">Combinators</a>
+                <a href="#pseudo-classes">Pseudo Classes</a>
+                <a href="#tables">Tables</a>
+                <a href="#lists">Lists</a>
+                <a href="#box-model">Box Model</a>
+                <a href="#flex">Flex</a>
+                <a href="#float">Float</a>
+                <a href="#gradients">Gradients</a>
+                <a href="#positioning">Positioning</a>
+        </div>
+
         <ul class="menu_bar">
             <li><a href="index.html">Index</a></li>
             <li><a href="world_wide_web.html">The World Wide Web</a></li>
@@ -13,103 +33,205 @@
             <li><a class="active" href="CSS.html">CSS</a></li>
             <li><a href="bootstrap.html">Bootstrap</a></li>
         </ul>
-        <h1 class="mainTitle">CSS</h1>
-        <div class="box">
-            <h2>CSS Rule</h2>
-            <p>
-                A CSS rule consists of the selector <span class="notes">like an element or a class</span> and a declaration in curved brackets.
-                Multiple selectors can be used by like this: h1, h2, p {declaration}
-            </p>
-        </div>
 
-        <div class="box">
-            <h2>Comments</h2>
-            <p>
-                Comments start with /* and end with */
-            </p>
-        </div>
-        <div class="box">
-            <h2>Colors</h2>
-            <p>
-                the color: property can be used to change the color of many things like text or background, using either predefined names or hex codes
-            </p>
-        </div>
+        <div class="main-body">
+            <h1 class="mainTitle">CSS</h1>
+            <div class="box" id="css-rule">
+                <h2>CSS Rule</h2>
+                <p>
+                    A CSS rule consists of the selector <span class="notes">like an element or a class</span> and a declaration in curved brackets.
+                    Multiple selectors can be used by like this: h1, h2, p {declaration}
+                </p>
+            </div>
 
-        <div class="box">
-            <h2>Background</h2>
-            <p>
-                Using the background property you can implement background color and images
-                with the background-repeat property you can make the image repeat only along one axis or not at all
-                using the background-position property you can set a fixed position of an image
-            </p>
-        </div>
-        <div class="box">
-            <h2>Text</h2>
-            <p>
-                With the color property you can change the color of text. With the text-align property, the text can be aligned
-                in the center, right or left. With text-align: justify; you can create block text. Using the text-decoration-line property you can add
-                decorations like underlines. You can also color them using text-decoration-color. The text-transform property is used to specify uppercase and lowercase letters in a text.
-            </p>
-        </div>
-        <div class="box">
-            <h2>Fonts</h2>
-            <p>
-                Serif fonts have small strokes at the end of each letter, Sans serif fonts don't. You can change the font with the font-family property.
-                The font-style property is used to make text italic. The font-size attribute can change font size either in pixels or with em
-                <span class="notes">this takes the current font size of the browser as base, which by default is 16px</span>. font-weight is used to make text bold.
-            </p>
-        </div>
-        <div class="box">
-            <h2>Links</h2>
-            <p>
-                Links can be styled with the a:link, a:visited, a:hover and a:activate selectors.
-            </p>
-        </div>
-        <div class="box">
-            <h2>Combinators</h2>
-                Using combinators you can select elements that have a certain relationship to other elements. <br>
-            <ul class="cleanList">
-                <li>"space" : descendant selector, selects all elements of a type, an element of the first type </li>
-                <li>">" : child selector, selects all <b>direct</b> descendants of a type that, that are within an element with the first type</li>
-                <li>"+" : adjacent sibling selector, selects elements of a type, that are directly under an element of the first type</li>
-                <li>"~" : general sibling selector, selects elements of a type, that are under or above an element of the first type example:</li>
-            </ul>
-            <pre>
-p &gt; span{
-    background-color: yellow;
-}
-            </pre>
-        </div>
-        <div class="box">
-            <h2>Pseudo Classes</h2>
-            <p>
-                A pseudo-class is used to define a special state of an element. Written directly after the selector, common pseudo classes include:
-                :link, :visited, :activated for the "a" tag, and :hover which also works for different ones. The :first-child pseudo-class selects an element,
-                that is the first child of the selected tag <span class="notes">for example p:first-child selects the first child in ever paragraph</span>
-            </p>
-        </div>
-        <div class="box">
-            <h2>Tables</h2>
-            <p>
-                You can change the border with the border: property. You can change things like width, color and visibility with it.
-                border-radius: can round the corners. You can also merge the border's lines to remove the space between cells using border-collapse: collapse
-            </p>
-        </div>
-        <div class="box">
-            <h2>Lists</h2>
-            <p>
-                Change ul bullet: list-style-type:; change bullet to image: list-style-image: url(""); change ol bullet: list-style-type:;
-                Set bullet position list-style-position: inside/outside. <span class="notes">For ol a bullet point may be upper-roman or lower-latin usw.</span>
-            </p>
-        </div>
-        <div class="box">
-            <h2>Style</h2>
-            <p>
-                Every element has a display style
-            </p>
+            <div class="box" id="comments">
+                <h2>Comments</h2>
+                <p>
+                    Comments start with /* and end with */
+                </p>
+            </div>
+            <div class="box" id="colors">
+                <h2>Colors</h2>
+                <p>
+                    the color: property can be used to change the color of many things like text or background, using either predefined names or hex codes
+                </p>
+            </div>
+
+            <div class="box" id="background">
+                <h2>Background</h2>
+                <p>
+                    Using the background property you can implement background color and images
+                    with the background-repeat property you can make the image repeat only along one axis or not at all
+                    using the background-position property you can set a fixed position of an image
+                    You can also add a gradient with background-image: linear-gradient(); <a href="#gradients" class="notes">more on this later</a>
+                </p>
+            </div>
+            <div class="box" id="text">
+                <h2>Text</h2>
+                <p>
+                    With the color property you can change the color of text. With the text-align property, the text can be aligned
+                    in the center, right or left. With text-align: justify; you can create block text. Using the text-decoration-line property you can add
+                    decorations like underlines. You can also color them using text-decoration-color. The text-transform property is used to specify uppercase and lowercase letters in a text.
+                </p>
+            </div>
+            <div class="box" id="fonts">
+                <h2>Fonts</h2>
+                <p>
+                    Serif fonts have small strokes at the end of each letter, Sans serif fonts don't. You can change the font with the font-family property.
+                    The font-style property is used to make text italic. The font-size attribute can change font size either in pixels or with em
+                    <span class="notes">this takes the current font size of the browser as base, which by default is 16px</span>. font-weight is used to make text bold.
+                </p>
+            </div>
+            <div class="box" id="links">
+                <h2>Links</h2>
+                <p>
+                    Links can be styled with the a:link, a:visited, a:hover and a:activate selectors.
+                </p>
+            </div>
+            <div class="box" id="combinators">
+                <h2>Combinators</h2>
+                    Using combinators you can select elements that have a certain relationship to other elements. <br>
+                <ul class="cleanList">
+                    <li>"space" : descendant selector, selects all elements of a type, an element of the first type </li>
+                    <li>">" : child selector, selects all <b>direct</b> descendants of a type that, that are within an element with the first type</li>
+                    <li>"+" : adjacent sibling selector, selects elements of a type, that are directly under an element of the first type</li>
+                    <li>"~" : general sibling selector, selects elements of a type, that are under or above an element of the first type example:</li>
+                </ul>
+                <pre>
+    p &gt; span{
+        background-color: yellow;
+    }
+                </pre>
+            </div>
+            <div class="box" id="pseudo-classes">
+                <h2>Pseudo Classes</h2>
+                <p>
+                    A pseudo-class is used to define a special state of an element. Written directly after the selector, common pseudo classes include:
+                    :link, :visited, :activated for the "a" tag, and :hover which also works for different ones. The :first-child pseudo-class selects an element,
+                    that is the first child of the selected tag <span class="notes">for example p:first-child selects the first child in ever paragraph</span>
+                </p>
+            </div>
+            <div class="box" id="tables">
+                <h2>Tables</h2>
+                <p>
+                    You can change the border with the border: property. You can change things like width, color and visibility with it.
+                    border-radius: can round the corners. You can also merge the border's lines to remove the space between cells using border-collapse: collapse.
+                    Using the rowspan and colspan attributes, you can make one cell take up more space
+                </p>
+                <table class="test-table">
+                    <thead>
+                        <tr>
+                            <th>HEADER1</th>
+                            <th>HEADER2</th>
+                            <th>HEADER3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CONTENT 1</td>
+                            <td colspan="2" rowspan="2">Large Content</td>
+                        </tr>
+                        <tr>
+                            <td>ALSO CONTENT</td>
+                        </tr>
+                        <tr>
+
+                            <td>EEEEEEEEE</td>
+                            <td>EEEEEEEEE</td>
+                            <td>EEEEEEEEE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box" id="lists">
+                <h2>Lists</h2>
+                <p>
+                    Change ul bullet: list-style-type:; change bullet to image: list-style-image: url(""); change ol bullet: list-style-type:;
+                    Set bullet position list-style-position: inside/outside. <span class="notes">For ol a bullet point may be upper-roman or lower-latin usw.</span>
+                </p>
+            </div>
+            <div class="box" id="box-model">
+                <h2>Box model</h2>
+                <p>
+                    Every element has a display property. It can be block or inline or something in between. Block elements can have margin and padding in all directions, while inline elements only
+                    have them on the sides. Block normally create a line break
+                </p>
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="The Box model" id="box-model-image">
+            </div>
+            <div class="box" id="flex">
+                <h2>Flex</h2>
+                Flex first needs a flex box (for example div with display:flex).
+                <h5>properties for container</h5>
+                <ol class="roman-ol">
+                    <li>flex-direction: can be column, row and both can be reversed</li>
+                    <li>flex-wrap: determines how the items wrap if not enough space</li>
+                    <li>flex-flow: combines the two above</li>
+                    <li>justify-content: changes how the elements are distributed along the main axis (for rows that is horizontal)</li>
+                    <li>align-items: changes how the elements are placed in line along the secondary axis</li>
+                    <li>align-content: changes how the elements are distributed along the secondary axis</li>
+                    <li>gap: changes exactly how much space is between the elements</li>
+                </ol>
+
+                <h5>Properties for children</h5>
+                <ul>
+                    <li>order: normally each element is numbered like they are put in html. This number can be changed to change the order</li>
+                    <li>flex-grow: Normally each element has the same amount of space. This number changes how many elements worth of space the element gets</li>
+                    <li>align-self: used to override the align-items property for a single element</li>
+                </ul>
+            </div>
+
+            <div class="box" id="float">
+                <h2>Float</h2>
+                <p>
+                    Floating an element places it outside the normal text flow. For example with float: left, an element will float on the left side.
+                    If clear: right is used, text will NOT flow around it on the right side.
+                </p>
+            </div>
+            <div class="box" id="gradients">
+                <h2>Gradients</h2>
+                <p>
+                    To set the background image as a gradient you have to use linear-gradient();.
+                    But there are also other gradients, like radial and conic. You can also set the angle and.
+                    For radial gradients, you can set how far it goes with closest/farthest-corner/side. You can also determine the center for it and the conic gradient with "at".
+                </p>
+                <div class="circle-flex">
+                    Linear:
+                    <div class="circle" id="linear-gradient-circle">
+
+                    </div>
+                    Radial:
+                    <div class="circle" id="radial-gradient-circle">
+
+                    </div>
+                    Conic:
+                    <div class="circle" id="conic-gradient-circle">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="positioning">
+                <h2>Positioning</h2>
+                <ul>
+                    <li>
+                        static: normal text flow
+                    </li>
+                    <li>
+                        relative: like static, but you can add an offset with top, right, bottom, left. This does <b>NOT</b> change the text flow for the surrounding elements
+                    </li>
+                    <li>
+                        absolute: Positioned relative to it's closest positioned ancestor (with position static)
+                    </li>
+                    <li>
+                        fixed: Has a fixed position in on the page, remains there when scrolling. Position can be changed with top, right, bottom and left properties
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="top-button">
             <a href="#" class="box">TOP</a>
+        </div>
+        <div>
+
         </div>
     </body>
 </html>

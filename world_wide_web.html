@@ -6,6 +6,16 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+
+        <div class="sidebar">
+            <a href="#general">General</a>
+            <a href="#html-www">HTML</a>
+            <a href="#url-www">URL</a>
+            <a href="#http-www">HTTP</a>
+            <a href="#web-server-www">Web Server</a>
+            <a href="#web-client-www">Web Client</a>
+        </div>
+
         <ul class="menu_bar">
             <li><a href="index.html">Index</a></li>
             <li><a class="active" href="world_wide_web.html">The World Wide Web</a></li>
@@ -13,9 +23,9 @@
             <li><a href="CSS.html">CSS</a></li>
             <li><a href="bootstrap.html">Bootstrap</a></li>
         </ul>
-        <h1 class="mainTitle">The World Wide Web</h1>
-        <section>
-            <div class="box">
+        <div class="main-body">
+            <h1 class="mainTitle">The World Wide Web</h1>
+            <div class="box" id="general">
                 <h2>General</h2>
                 <p>
                     The world wide web was founded by Tim Berners-Lee, and was meant to be a decentralized file system
@@ -24,14 +34,14 @@
                         href="#HTTP">HTTP</a>.
                 </p>
             </div>
-            <div class="box">
+            <div class="box" id="html-www">
                 <h2 id="HTML">HTML</h2>
                 <p>
 
                     HTML (Hypertext Markup Language) is used to form the base structure and content of a website.
                 </p>
             </div>
-            <div class="box">
+            <div class="box" id="url-www">
                 <h2 id="URL">URL</h2>
                 <p>
                     A URL (Uniform Resource Locator) is the address used by web clients to send HTTP requests to
@@ -41,7 +51,7 @@
                     The host is the domain, the userinfo may include content such as passwords and the port is a number.
                 </p>
             </div>
-            <div class="box">
+            <div class="box" id="http-www">
                 <h2 id="HTTP">HTTP</h2>
                 <p>
                     (Hypertext Transfer Protocol) is the primary protocol, by web servers and web clients
@@ -50,7 +60,7 @@
                     There are also request Headers which contain age, location or server, content type, and content encoding.
                 </p>
             </div>
-            <div class="box">
+            <div class="box" id="web-server-www">
                 <h2>Web Server</h2>
                 <p>
                     Web Servers are what make up the entire World Wide Web. They can receive HTTP request and
@@ -58,7 +68,7 @@
                     which a web client can use to generate something like an HTML file on the fly.
                 </p>
             </div>
-            <div class="box">
+            <div class="box" id="web-client-www">
                 <h2>Web Client</h2>
                 <p>
                     Web clients, also commonly known as browsers, are a way for people to access websites.
@@ -66,7 +76,7 @@
                     display the received resources.
                 </p>
             </div>
-        </section>
+        </div>
 
         <div class="top-button">
             <a href="#" class="box">TOP</a>
